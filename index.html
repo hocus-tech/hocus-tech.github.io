@@ -74,7 +74,7 @@
     id="toc"
     class="toc-list-h1"
     x-data="tocController"
-    x-init="load([{&#34;id&#34;:&#34;introduction&#34;,&#34;level&#34;:1,&#34;sub&#34;:[],&#34;title&#34;:&#34;Introduction&#34;},{&#34;id&#34;:&#34;authentication&#34;,&#34;level&#34;:1,&#34;sub&#34;:[],&#34;title&#34;:&#34;Authentication&#34;},{&#34;id&#34;:&#34;installation&#34;,&#34;level&#34;:1,&#34;sub&#34;:[{&#34;id&#34;:&#34;create-your-project&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Create your project&#34;},{&#34;id&#34;:&#34;install-the-theme&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Install the theme&#34;},{&#34;id&#34;:&#34;basic-configuration&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Basic configuration&#34;},{&#34;id&#34;:&#34;create-your-first-chapter-page&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Create your first chapter page&#34;},{&#34;id&#34;:&#34;create-your-first-content-pages&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Create your first content pages&#34;},{&#34;id&#34;:&#34;launching-the-website-locally&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Launching the website locally&#34;},{&#34;id&#34;:&#34;build-the-website&#34;,&#34;level&#34;:2,&#34;sub&#34;:[{&#34;id&#34;:&#34;chapter-1&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;Chapter 1&#34;}],&#34;title&#34;:&#34;Build the website&#34;}],&#34;title&#34;:&#34;Installation&#34;},{&#34;id&#34;:&#34;getting-started&#34;,&#34;level&#34;:1,&#34;sub&#34;:[{&#34;sub&#34;:[]}],&#34;title&#34;:&#34;Getting Started&#34;}])"
+    x-init="load([{&#34;id&#34;:&#34;introduction&#34;,&#34;level&#34;:1,&#34;sub&#34;:[],&#34;title&#34;:&#34;Introduction&#34;},{&#34;id&#34;:&#34;installation&#34;,&#34;level&#34;:1,&#34;sub&#34;:[{&#34;id&#34;:&#34;create-your-project&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Create your project&#34;},{&#34;id&#34;:&#34;install-the-theme&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Install the theme&#34;},{&#34;id&#34;:&#34;basic-configuration&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Basic configuration&#34;},{&#34;id&#34;:&#34;create-your-first-chapter-page&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Create your first chapter page&#34;},{&#34;id&#34;:&#34;create-your-first-content-pages&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Create your first content pages&#34;},{&#34;id&#34;:&#34;launching-the-website-locally&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Launching the website locally&#34;},{&#34;id&#34;:&#34;build-the-website&#34;,&#34;level&#34;:2,&#34;sub&#34;:[{&#34;id&#34;:&#34;chapter-1&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;Chapter 1&#34;}],&#34;title&#34;:&#34;Build the website&#34;}],&#34;title&#34;:&#34;Installation&#34;},{&#34;id&#34;:&#34;getting-started&#34;,&#34;level&#34;:1,&#34;sub&#34;:[{&#34;sub&#34;:[]}],&#34;title&#34;:&#34;Getting Started&#34;}])"
     @scroll.window="onScroll()">
     
     <template x-for="row in rows">
@@ -129,16 +129,78 @@
 <h1 id="introduction">Introduction</h1>
 <p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
 <p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th style="text-align:center">Go</th>
+<th style="text-align:center">Java</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kafka</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+</tr>
+<tr>
+<td>Mongo</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+</tr>
+<tr>
+<td>PostgreSQL</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+</tr>
+<tr>
+<td>RabbitMQ</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+</tr>
+<tr>
+<td>AWS DynamoDB</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+</tr>
+<tr>
+<td>AWS ECR</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+</tr>
+<tr>
+<td>AWS Kinesis</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+</tr>
+<tr>
+<td>AWS S3</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+</tr>
+<tr>
+<td>AWS SQS</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+</tr>
+<tr>
+<td>Azure Storage</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅ </td>
+</tr>
+<tr>
+<td>GCP Pubsub</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center">✅</td>
+</tr>
+<tr>
+<td>GCP Storage</td>
+<td style="text-align:center">✅</td>
+<td style="text-align:center"> ✅</td>
+</tr>
+</tbody>
+</table>
 <p><strong>This example API documentation page was created with <a href="https://github.com/bep/docuapi/">DocuAPI</a>, a multilingual documentation theme for the static site generator <a href="http://gohugo.io/">Hugo</a>.</strong></p>
-
-
-
-
-  
-
-
-
-<h1 id="authentication">Authentication</h1>
 <blockquote>
 <p>To authorize, use this code:</p>
 </blockquote>
