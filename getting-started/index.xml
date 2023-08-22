@@ -8,25 +8,13 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 25 Sep 2019 01:53:09 +0330</lastBuildDate><atom:link href="/getting-started/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Installation</title>
-      <link>/getting-started/installation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/getting-started/installation/</guid>
-      <description>Installation The following steps are here to help you initialize your new website. If you don&amp;rsquo;t know Hugo at all, we strongly suggest you learn more about it by following this great documentation for beginners.
-Create your project Hugo provides a new command to create a new website.
-hugo new site &amp;lt;new_project&amp;gt; Install the theme Install the Hugo-theme-learn theme by following this documentation
-This theme&amp;rsquo;s repository is: https://github.com/matcornic/hugo-theme-learn.git
-Alternatively, you can download the theme as .</description>
-    </item>
-    
-    <item>
       <title>Getting Started</title>
       <link>/getting-started/main/</link>
       <pubDate>Wed, 25 Sep 2019 01:53:09 +0330</pubDate>
       
       <guid>/getting-started/main/</guid>
-      <description>Chapter 1 Getting Started Build a documentation website for your service using Hugo and hugo-theme-learn in less than an hour.</description>
+      <description>Getting Started Welcome to the Konjure project! Konjure is an open-source command-line interface designed to simplify the process of generating Kubernetes resources&amp;rsquo; YAML files for your applications. Whether you&amp;rsquo;re working with web services, background jobs, or any other kind of application, Konjure helps you streamline the process by analyzing your code repository and generating the necessary Kubernetes resources based on the detected application type and cloud service dependencies.
+Installation To get started with Konjure, you need to install it on your system.</description>
     </item>
     
   </channel>

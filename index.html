@@ -74,7 +74,7 @@
     id="toc"
     class="toc-list-h1"
     x-data="tocController"
-    x-init="load([{&#34;id&#34;:&#34;introduction&#34;,&#34;level&#34;:1,&#34;sub&#34;:[],&#34;title&#34;:&#34;Introduction&#34;},{&#34;id&#34;:&#34;installation&#34;,&#34;level&#34;:1,&#34;sub&#34;:[{&#34;id&#34;:&#34;create-your-project&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Create your project&#34;},{&#34;id&#34;:&#34;install-the-theme&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Install the theme&#34;},{&#34;id&#34;:&#34;basic-configuration&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Basic configuration&#34;},{&#34;id&#34;:&#34;create-your-first-chapter-page&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Create your first chapter page&#34;},{&#34;id&#34;:&#34;create-your-first-content-pages&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Create your first content pages&#34;},{&#34;id&#34;:&#34;launching-the-website-locally&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Launching the website locally&#34;},{&#34;id&#34;:&#34;build-the-website&#34;,&#34;level&#34;:2,&#34;sub&#34;:[{&#34;id&#34;:&#34;chapter-1&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;Chapter 1&#34;}],&#34;title&#34;:&#34;Build the website&#34;}],&#34;title&#34;:&#34;Installation&#34;},{&#34;id&#34;:&#34;getting-started&#34;,&#34;level&#34;:1,&#34;sub&#34;:[{&#34;sub&#34;:[]}],&#34;title&#34;:&#34;Getting Started&#34;}])"
+    x-init="load([{&#34;id&#34;:&#34;introduction&#34;,&#34;level&#34;:1,&#34;sub&#34;:[{&#34;sub&#34;:[{&#34;id&#34;:&#34;the-services-konjure-supports&#34;,&#34;level&#34;:3,&#34;title&#34;:&#34;The services Konjure supports&#34;}]}],&#34;title&#34;:&#34;Introduction&#34;},{&#34;id&#34;:&#34;getting-started&#34;,&#34;level&#34;:1,&#34;sub&#34;:[{&#34;id&#34;:&#34;installation&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Installation&#34;},{&#34;id&#34;:&#34;configuration&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Configuration&#34;},{&#34;id&#34;:&#34;generating-kubernetes-resources&#34;,&#34;level&#34;:2,&#34;title&#34;:&#34;Generating Kubernetes Resources&#34;},{&#34;id&#34;:&#34;additional-resources&#34;,&#34;level&#34;:2,&#34;sub&#34;:[],&#34;title&#34;:&#34;Additional Resources&#34;}],&#34;title&#34;:&#34;Getting Started&#34;}])"
     @scroll.window="onScroll()">
     
     <template x-for="row in rows">
@@ -117,8 +117,6 @@
   
     
   
-    
-  
   
     
 
@@ -127,8 +125,18 @@
 
 
 <h1 id="introduction">Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
-<p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<p>Welcome to the official documentation for Konjure – your gateway to streamlined Infrastructure-from-Code transformation! In a world where agility and automation are the cornerstones of modern IT, Konjure stands as your trusted companion for translating code into robust, scalable infrastructure. This documentation is your key to unlocking the full potential of Konjure, where we&rsquo;ll guide you through every facet of this innovative tool.</p>
+<p>Whether you&rsquo;re a battle-hardened DevOps engineer or a curious developer venturing into the realm of infrastructure automation, Konjure equips you with the tools to effortlessly craft and manage your environment using code. With comprehensive explanations, hands-on tutorials, and real-world use cases, this documentation empowers you to harness the power of Konjure effectively.</p>
+<p>Join us on a journey where lines of code metamorphose into concrete infrastructure, where deployment and maintenance become synonymous with simplicity. As we navigate through the intricacies of Konjure together, you&rsquo;ll discover a new era of IT where efficiency, collaboration, and scalability converge seamlessly. Let&rsquo;s embark on this transformative experience and pioneer the future of infrastructure, hand in hand with Konjure.</p>
+
+
+
+
+  
+
+
+
+<h3 id="the-services-konjure-supports">The services Konjure supports</h3>
 <table>
 <thead>
 <tr>
@@ -200,156 +208,9 @@
 </tr>
 </tbody>
 </table>
-<p><strong>This example API documentation page was created with <a href="https://github.com/bep/docuapi/">DocuAPI</a>, a multilingual documentation theme for the static site generator <a href="http://gohugo.io/">Hugo</a>.</strong></p>
-<blockquote>
-<p>To authorize, use this code:</p>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;github.com/bep/kittn/auth&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">api</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">auth</span>.<span style="color:#a6e22e">Authorize</span>(<span style="color:#e6db74">&#34;meowmeowmeow&#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// Just to make it compile
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">_</span> = <span style="color:#a6e22e">api</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> kittn <span style="color:#f92672">=</span> require<span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">&#39;</span>kittn<span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>let api <span style="color:#f92672">=</span> kittn<span style="color:#f92672">.</span><span style="color:#a6e22e">authorize</span><span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">&#39;</span>meowmeowmeow<span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#f92672">);</span>
-</span></span></code></pre></div><blockquote>
-<p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
-</blockquote>
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
-<p><code>Authorization: meowmeowmeow</code></p>
-<!-- raw HTML omitted -->
 
   
     
-
-
-
-  
-
-
-
-<h1 id="installation">Installation</h1>
-<p>The following steps are here to help you initialize your new website. If you don&rsquo;t know Hugo at all, we strongly suggest you learn more about it by following this <a href="https://gohugo.io/overview/quickstart/">great documentation for beginners</a>.</p>
-
-
-
-
-  
-
-
-
-<h2 id="create-your-project">Create your project</h2>
-<p>Hugo provides a <code>new</code> command to create a new website.</p>
-<pre tabindex="0"><code>hugo new site &lt;new_project&gt;
-</code></pre>
-
-
-
-  
-
-
-
-<h2 id="install-the-theme">Install the theme</h2>
-<p>Install the <strong>Hugo-theme-learn</strong> theme by following <a href="https://gohugo.io/themes/installing/">this documentation</a></p>
-<p>This theme&rsquo;s repository is: <a href="https://github.com/matcornic/hugo-theme-learn.git">https://github.com/matcornic/hugo-theme-learn.git</a></p>
-<p>Alternatively, you can <a href="https://github.com/matcornic/hugo-theme-learn/archive/master.zip">download the theme as .zip</a> file and extract it in the <code>themes</code> directory</p>
-
-
-
-
-  
-
-
-
-<h2 id="basic-configuration">Basic configuration</h2>
-<p>When building the website, you can set a theme by using <code>--theme</code> option. However, we suggest you modify the configuration file (<code>config.toml</code>) and set the theme as the default. You can also add the <code>[outputs]</code> section to enable the search functionality.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># Change the default theme to be use when building the site with Hugo</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;hugo-theme-learn&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># For search functionality</span>
-</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">outputs</span>]
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">home</span> = [ <span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#e6db74">&#34;RSS&#34;</span>, <span style="color:#e6db74">&#34;JSON&#34;</span>]
-</span></span></code></pre></div>
-
-
-
-  
-
-
-
-<h2 id="create-your-first-chapter-page">Create your first chapter page</h2>
-<p>Chapters are pages that contain other child pages. It has a special layout style and usually just contains a <em>chapter name</em>, the <em>title</em> and a <em>brief abstract</em> of the section.</p>
-<pre tabindex="0"><code>### Chapter 1
-
-# Basics
-
-Discover what this Hugo theme is all about and the core concepts behind it.
-</code></pre><p>renders as</p>
-<p><img src="/en/basics/installation/images/chapter.png?classes=shadow&amp;width=60pc" alt="A Chapter"></p>
-<p><strong>Hugo-theme-learn</strong> provides archetypes to create skeletons for your website. Begin by creating your first chapter page with the following command</p>
-<pre tabindex="0"><code>hugo new --kind chapter basics/_index.md
-</code></pre><p>By opening the given file, you should see the property <code>chapter=true</code> on top, meaning this page is a <em>chapter</em>.</p>
-<p>By default all chapters and pages are created as a draft. If you want to render these pages, remove the property <code>draft: true</code> from the metadata.</p>
-
-
-
-
-  
-
-
-
-<h2 id="create-your-first-content-pages">Create your first content pages</h2>
-<p>Then, create content pages inside the previously created chapter. Here are two ways to create content in the chapter:</p>
-<pre tabindex="0"><code>hugo new basics/first-content.md
-hugo new basics/second-content/_index.md
-</code></pre><p>Feel free to edit thoses files by adding some sample content and replacing the <code>title</code> value in the beginning of the files.</p>
-
-
-
-
-  
-
-
-
-<h2 id="launching-the-website-locally">Launching the website locally</h2>
-<p>Launch by using the following command:</p>
-<pre tabindex="0"><code>hugo serve
-</code></pre><p>Go to <code>http://localhost:1313</code></p>
-<p>You should notice three things:</p>
-<ol>
-<li>You have a left-side <strong>Basics</strong> menu, containing two submenus with names equal to the <code>title</code> properties in the previously created files.</li>
-<li>The home page explains how to customize it by following the instructions.</li>
-<li>When you run <code>hugo serve</code>, when the contents of the files change, the page automatically refreshes with the changes. Neat!</li>
-</ol>
-
-
-
-
-  
-
-
-
-<h2 id="build-the-website">Build the website</h2>
-<p>When your site is ready to deploy, run the following command:</p>
-<pre tabindex="0"><code>hugo
-</code></pre>
-  
-    
-
-
-
-  
-
-
-
-<h3 id="chapter-1">Chapter 1</h3>
-
 
 
 
@@ -358,7 +219,68 @@ hugo new basics/second-content/_index.md
 
 
 <h1 id="getting-started">Getting Started</h1>
-<p>Build a documentation website for your service using Hugo and hugo-theme-learn in less than an hour.</p>
+<p>Welcome to the Konjure project! Konjure is an open-source command-line interface designed to simplify the process of generating Kubernetes resources&rsquo; YAML files for your applications. Whether you&rsquo;re working with web services, background jobs, or any other kind of application, Konjure helps you streamline the process by analyzing your code repository and generating the necessary Kubernetes resources based on the detected application type and cloud service dependencies.</p>
+
+
+
+
+  
+
+
+
+<h2 id="installation">Installation</h2>
+<p>To get started with Konjure, you need to install it on your system. Konjure supports macOS, Ubuntu/Debian, and Windows platforms.</p>
+<blockquote>
+<p>If you&rsquo;re using macOS, you can install Konjure using Homebrew, a popular package manager for macOS:</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew tap hocus-tech/konjure
+</span></span><span style="display:flex;"><span>brew install konjure
+</span></span></code></pre></div><blockquote>
+<p>For Ubuntu/Debian-based systems, you can install Konjure using APT, the package manager for these distributions:</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt install konjure
+</span></span></code></pre></div><blockquote>
+<p>Windows users can use Chocolatey, a package manager for Windows, to install Konjure:</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>choco install konjure
+</span></span></code></pre></div>
+
+
+
+  
+
+
+
+<h2 id="configuration">Configuration</h2>
+<p>Once Konjure is installed, you need to configure it before you can start generating Kubernetes resources. The configuration process involves providing the necessary inputs for your application and its cloud service dependencies. To configure Konjure, you&rsquo;ll use the <code>konjure bootstrap</code> command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>konjure bootstrap
+</span></span></code></pre></div><p>This command will guide you through a series of prompts to gather information such as the repository link (GitHub, GitLab), cloud service credentials (AWS, GCP, Azure), and other relevant details about your application.</p>
+
+
+
+
+  
+
+
+
+<h2 id="generating-kubernetes-resources">Generating Kubernetes Resources</h2>
+<p>With Konjure configured, you&rsquo;re ready to generate Kubernetes resources&rsquo; YAML files for your application. The <code>konjure generate</code> command is used to trigger the resource generation process:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>konjure generate
+</span></span></code></pre></div><p>Konjure will analyze the code in the provided repository, determine the type of application (web service, job, etc.), and identify the cloud services used. Based on this analysis, it will generate the necessary Kubernetes resources&rsquo; YAML files, tailored to your application&rsquo;s requirements.</p>
+<p>Congratulations! You&rsquo;ve successfully started using Konjure to automate the generation of Kubernetes resources for your projects. This process can save you time and effort while ensuring that your Kubernetes deployment files are accurate and efficient.</p>
+
+
+
+
+  
+
+
+
+<h2 id="additional-resources">Additional Resources</h2>
+<p>For more information, you can check out the official Konjure documentation, which provides detailed usage instructions, configuration options, and advanced features: <a href="https://github.com/hocus-tech/konjure/docs">Konjure Documentation</a></p>
+<p>If you encounter any issues, have questions, or want to contribute to the project, feel free to visit the Konjure GitHub repository: <a href="https://github.com/hocus-tech/konjure">Konjure GitHub Repository</a></p>
+<p>Thank you for choosing Konjure, and happy Kubernetes resource generation!</p>
 
   
 
@@ -368,7 +290,7 @@ hugo new basics/second-content/_index.md
           <div
             class="lang-selector"
             x-data="langController"
-            x-init="initLangs([{&#34;key&#34;:&#34;go&#34;,&#34;name&#34;:&#34;Go&#34;},{&#34;key&#34;:&#34;java&#34;,&#34;name&#34;:&#34;Java&#34;}])">
+            x-init="initLangs([{&#34;key&#34;:&#34;go&#34;,&#34;name&#34;:&#34;Go&#34;},{&#34;key&#34;:&#34;java&#34;,&#34;name&#34;:&#34;Java&#34;},{&#34;key&#34;:&#34;sh&#34;,&#34;name&#34;:&#34;Shell&#34;}])">
             <template x-for="(tab, index) in tabs">
               <a
                 x-text="tab.name"

@@ -13,22 +13,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/main/</guid>
-      <description>Introduction Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
-We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
-Service Go Java Kafka ✅ ✅ Mongo ✅ ✅ PostgreSQL ✅ ✅ RabbitMQ ✅ ✅ AWS DynamoDB ✅ ✅ AWS ECR ✅ ✅ AWS Kinesis ✅ ✅ AWS S3 ✅ ✅ AWS SQS ✅ ✅ Azure Storage ✅ ✅ GCP Pubsub ✅ ✅ GCP Storage ✅ ✅ This example API documentation page was created with DocuAPI, a multilingual documentation theme for the static site generator Hugo.</description>
-    </item>
-    
-    <item>
-      <title>Installation</title>
-      <link>/getting-started/installation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/getting-started/installation/</guid>
-      <description>Installation The following steps are here to help you initialize your new website. If you don&amp;rsquo;t know Hugo at all, we strongly suggest you learn more about it by following this great documentation for beginners.
-Create your project Hugo provides a new command to create a new website.
-hugo new site &amp;lt;new_project&amp;gt; Install the theme Install the Hugo-theme-learn theme by following this documentation
-This theme&amp;rsquo;s repository is: https://github.com/matcornic/hugo-theme-learn.git
-Alternatively, you can download the theme as .</description>
+      <description>Introduction Welcome to the official documentation for Konjure – your gateway to streamlined Infrastructure-from-Code transformation! In a world where agility and automation are the cornerstones of modern IT, Konjure stands as your trusted companion for translating code into robust, scalable infrastructure. This documentation is your key to unlocking the full potential of Konjure, where we&amp;rsquo;ll guide you through every facet of this innovative tool.
+Whether you&amp;rsquo;re a battle-hardened DevOps engineer or a curious developer venturing into the realm of infrastructure automation, Konjure equips you with the tools to effortlessly craft and manage your environment using code.</description>
     </item>
     
     <item>
@@ -37,7 +23,8 @@ Alternatively, you can download the theme as .</description>
       <pubDate>Wed, 25 Sep 2019 01:53:09 +0330</pubDate>
       
       <guid>/getting-started/main/</guid>
-      <description>Chapter 1 Getting Started Build a documentation website for your service using Hugo and hugo-theme-learn in less than an hour.</description>
+      <description>Getting Started Welcome to the Konjure project! Konjure is an open-source command-line interface designed to simplify the process of generating Kubernetes resources&amp;rsquo; YAML files for your applications. Whether you&amp;rsquo;re working with web services, background jobs, or any other kind of application, Konjure helps you streamline the process by analyzing your code repository and generating the necessary Kubernetes resources based on the detected application type and cloud service dependencies.
+Installation To get started with Konjure, you need to install it on your system.</description>
     </item>
     
   </channel>
