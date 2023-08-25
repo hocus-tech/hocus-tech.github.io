@@ -27,5 +27,15 @@ Whether you&amp;rsquo;re a battle-hardened DevOps engineer or a curious develope
 Installation To get started with Konjure, you need to install it on your system.</description>
     </item>
     
+    <item>
+      <title>How It Works?</title>
+      <link>/how-it-works/main/</link>
+      <pubDate>Wed, 25 Sep 2019 01:53:09 +0330</pubDate>
+      
+      <guid>/how-it-works/main/</guid>
+      <description>How It Works Konjure simplifies the process of generating Kubernetes resources&amp;rsquo; YAML files by automating the analysis of your codebase and intelligently detecting application types and cloud service dependencies. Here&amp;rsquo;s a step-by-step overview of how Konjure works:
+1. Code Analysis When you invoke the konjure generate command, Konjure starts by analyzing the code within your repository. It supports multiple programming languages such as Go and Java, and it examines the structure and content of your code to understand how your application works.</description>
+    </item>
+    
   </channel>
 </rss>
