@@ -266,9 +266,16 @@
 
 
 <h2 id="generating-kubernetes-resources">Generating Kubernetes Resources</h2>
-<p>With Konjure configured, you&rsquo;re ready to generate Kubernetes resources&rsquo; YAML files for your application. The <code>konjure generate</code> command is used to trigger the resource generation process:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>konjure generate
-</span></span></code></pre></div><p>Konjure will analyze the code in the provided repository, determine the type of application (web service, job, etc.), and identify the cloud services used. Based on this analysis, it will generate the necessary Kubernetes resources&rsquo; YAML files, tailored to your application&rsquo;s requirements.</p>
+<p>With Konjure configured, you&rsquo;re ready to generate Kubernetes resources&rsquo; YAML files for your application. The <code>konjure</code> command is used to trigger the resource generation process:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>konjure -dir &lt;dir&gt; -licenseKey &lt;licenseKey&gt; -name &lt;name&gt;
+</span></span></code></pre></div><blockquote>
+<ul>
+<li>dir: the directory of the source code</li>
+<li>licenseKey: your Konjure license key</li>
+<li>name: the name of the application</li>
+</ul>
+</blockquote>
+<p>Konjure will analyze the code in the provided repository, determine the type of application (web service, job, etc.), and identify the cloud services used. Based on this analysis, it will generate the necessary Kubernetes resources&rsquo; YAML files, tailored to your application&rsquo;s requirements.</p>
 <p>Congratulations! You&rsquo;ve successfully started using Konjure to automate the generation of Kubernetes resources for your projects. This process can save you time and effort while ensuring that your Kubernetes deployment files are accurate and efficient.</p>
 
 
